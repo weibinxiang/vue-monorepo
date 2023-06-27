@@ -1,1 +1,4 @@
-module.exports = { ...require('@config/eslint') };
+module.exports = {
+  root: true,
+  extends: ['@config'],
+};

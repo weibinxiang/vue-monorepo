@@ -8,12 +8,15 @@ importers:
 
   .:
     devDependencies:
-      '@config/eslint':
+      '@config/eslint-config':
         specifier: workspace:*
         version: link:config/eslint
       '@config/prettier':
         specifier: workspace:*
         version: link:config/prettier
+      '@config/stylelint-config':
+        specifier: workspace:*
+        version: link:config/stylelint
       '@config/typescript':
         specifier: workspace:*
         version: link:config/typescript

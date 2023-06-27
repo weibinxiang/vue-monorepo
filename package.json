@@ -1,6 +1,6 @@
 {
   "name": "vite-project",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,17 +8,19 @@
     "build": "turbo build",
     "clean": "turbo run clean",
     "dev": "vite",
-    "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,tsx}\" --fix",
+    "preinstall": "npx only-allow pnpm",
+    "lint:eslint": "eslint .",
     "lint:lint-staged": "lint-staged",
-    "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:prettier": "prettier --write .",
+    "lint:stylelint": "stylelint \"**/*.{vue,css,less.scss}\" --fix --cache --cache-location node_modules/.cache/stylelint/",
     "prepare": "husky install",
     "preview": "vite preview",
     "reinstall": "npm run clean && rimraf pnpm-lock.yaml && rimraf node_modules && npm run bootstrap"
   },
   "devDependencies": {
-    "@config/eslint": "workspace:*",
+    "@config/eslint-config": "workspace:*",
     "@config/prettier": "workspace:*",
+    "@config/stylelint-config": "workspace:*",
     "@config/typescript": "workspace:*",
     "@vitejs/plugin-vue": "^4.1.0",
     "husky": "^8.0.3",

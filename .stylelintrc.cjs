@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['@config/stylelint'],
+  extends: ['@config/stylelint-config'],
 };

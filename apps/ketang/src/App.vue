@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import HelloWorld from './components/HelloWorld.vue';
 
-  console.log('12121');
+  console.log('121211');
 </script>
 
 <template>
