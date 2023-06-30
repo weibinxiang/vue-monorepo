@@ -62,7 +62,7 @@ export default defineConfig({
     'n/no-extraneous-import': [
       'error',
       {
-        allowModules: ['unbuild'],
+        allowModules: ['unbuild', '@config/vite-config'],
       },
     ],
 

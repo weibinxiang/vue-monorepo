@@ -1,15 +1,15 @@
 {
-  "name": "@config/typescript",
+  "name": "@config/typescript-config",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "files": [
     "/src/base.json",
     "/src/web.json"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
